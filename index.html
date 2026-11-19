@@ -50,7 +50,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         }
 
 	function outputResults(){
-		var percent_Marines = Marines_count/(Marines_count + Mivilian_count)*100; // This line converts the Marines_count into a percentage
+		var percent_Marines = Marines_count/(Marines_count + Civilian_count)*100; // This line converts the Marines_count into a percentage
 		var percent_Civilian = Civilian_count/(Marines_count + Civilian_count)*100; // This line converts the Civilian_count into a percentage
 		var resultsText = document.getElementById("resultsLocation"); // creates a java script link between the variable called "resultsText" and the page element with id of resultsLocation
 		resultsLocation.innerHTML = "Probability it is marines = " + percent_Marines + "% <br> Probability it is a Civilian = " + percent_Civilian + "%" //This line replaces the text from the Results Page with the diagnosis
